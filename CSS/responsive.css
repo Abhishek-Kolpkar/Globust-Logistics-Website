@@ -10,13 +10,6 @@
   /**
    * HERO BANNER
    */
-  nav .navbar .nav-links {
-    top: 11%;
-  }
-
-  /**
-   * HERO BANNER
-   */
   .hero {
     height: 40vh;
   }
@@ -61,10 +54,6 @@
   .btn {
     font-size: var(--fs-7);
     padding-inline: 30px 60px;
-  }
-
-  nav .navbar .nav-links {
-    top: 10%;
   }
 
   /**
@@ -135,13 +124,6 @@
 
   .grid-list {
     grid-template-columns: 1fr 1fr;
-  }
-
-  /**
-   * HERO BANNER
-   */
-  nav .navbar .nav-links {
-    top: 7%;
   }
 
   /**
