@@ -29,12 +29,27 @@
         background-image: url("/assets/about/comapny.webp");
       }
 
-      #about .section-subtitle,
-      #industry .section-subtitle,
-      #brand .section-subtitle {
-        text-align: center;
+      #about .section-title,
+      #industry .section-title,
+      #brand .section-title {
+        width: max-content;
         font-size: var(--fs-4);
         margin-block-end: 30px;
+        position: relative;
+        margin-inline: auto;
+        line-height: 2;
+      }
+
+      #about .section-title::after, #industry .section-title::after, #brand .section-title::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 3px;
+        background-color: var(--dark-orange);
+        transform: translate(50%, -50%);
       }
 
       .comapny-banner {
@@ -45,13 +60,6 @@
 
       #about .container {
         margin-bottom: 20px;
-      }
-
-      #about .section-title {
-        font-size: var(--fs-5);
-        text-align: center;
-        background-color: var(--light-gray);
-        padding-block: 5px;
       }
 
       #about .about-content {
@@ -69,10 +77,10 @@
       }
 
       @media (max-width: 540px) {
-        #about .section-subtitle,
-        #industry .section-subtitle,
-        #brand .section-subtitle {
-          font-size: var(--fs-7);
+        #about .section-title,
+        #industry .section-title,
+        #brand .section-title {
+          font-size: var(--fs-5);
         }
       }
     </style>
@@ -107,9 +115,7 @@
       <section class="section about" id="about" aria-label="about">
         <div class="container">
           <div>
-            <p class="section-subtitle">
-              <span>Who We Are</span>
-            </p>
+            <h2 class="h2 section-title">Who We Are</h2>
             <figure class="comapny-banner img-holder" style="--width: 100%">
               <img
                 src="/assets/about/about-img.jpg"
@@ -150,8 +156,8 @@
         </div>
 
         <div class="container">
-          <div>
-            <h2 class="h2 section-title">Core Values</h2>
+          <div class="first">
+            <p class="h2 section-title">Core Values</p>
             <figure class="comapny-banner img-holder" style="--width: 100%">
               <img
                 src="/assets/about/core_values.jpg"
@@ -227,9 +233,7 @@
       -->
       <section class="section project" aria-label="project" id="industry">
         <div class="container">
-          <p class="section-subtitle">
-            <span>Industries We Support</span>
-          </p>
+          <h2 class="h2 section-title">Industries We Serve</h2>
 
           <ul class="project-list">
             <li class="project-item">
@@ -384,9 +388,7 @@
       -->
       <section class="section brand" aria-label="brand" id="brand">
         <div class="container">
-          <p class="section-subtitle">
-            <span>OUR ASSOCIATIONS</span>
-          </p>
+          <h2 class="h2 section-title">OUR ASSOCIATIONS</h2>
         </div>
 
         <div class="swiper">
