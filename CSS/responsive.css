@@ -40,6 +40,10 @@
     font-size: var(--fs-9);
   }
 
+  #about .section-subtitle, #industry .section-subtitle, #brand .section-subtitle {
+    font-size: var(--fs-5);
+  }
+
   /**
    * FOOTER
    */
