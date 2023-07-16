@@ -150,9 +150,9 @@
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
-.service {
+/* .service {
   background-color: var(--alice-blue);
-}
+} */
 
 .service :is(.section-subtitle, .section-title, .section-text) {
   text-align: center;
@@ -169,9 +169,10 @@
 .service-card {
   background-color: var(--white);
   padding: 30px;
-  border: 10px solid transparent;
+  border: 8px solid transparent;
   transition: var(--transition);
   border-radius: 15px;
+  box-shadow: 0 1px 3px var(--eerie-black);
 }
 
 .service-card:is(:hover, :focus-within) {
@@ -261,9 +262,9 @@
 /*-----------------------------------*\
   #PROJECT
 \*-----------------------------------*/
-.project {
+/* .project {
   background-color: var(--alice-blue);
-}
+} */
 
 .project :is(.section-subtitle, .section-title, .section-text) {
   text-align: center;

@@ -1,4 +1,4 @@
-/*-----------------------------------*\
+/* -----------------------------------*\
   #HEADER
 \*-----------------------------------*/
 
@@ -176,15 +176,15 @@ nav .navbar .links li:hover .js-sub-menu {
     display: block;
   }
   nav .navbar .nav-links {
-    width: 0;
+    width: 100%;
     height: fit-content;
     position: fixed;
     top: 100px;
-    right: -25%;
+    right: -100%;
     background-color: var(--white);
     line-height: 40px;
     padding: 20px 40px;
-    transition: all 0.5s ease;
+    transition: all 0.5s linear;
     z-index: 1000;
     flex-direction: column;
     align-items: flex-start;

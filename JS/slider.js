@@ -17,6 +17,7 @@ let swiper1 = new Swiper(".mySwiper", {
 // Swiper JS Code for slider
 let swiper2 = new Swiper(".slide-container", {
   slidesPerView: 5,
+  spaceBetween: 30,
   sliderPerGroup: 5,
   loop: true,
   centerSlide: "true",
